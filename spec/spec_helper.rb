@@ -15,6 +15,6 @@ RSpec.configure do |config|
     @current_datetime = DateTime.now
     allow(DateTime).to receive(:now).and_return(@current_datetime)
 
-    allow(Punchblock).to receive(:new_request_id).and_return('foo')
+    allow(Adhearsion).to receive(:new_request_id).and_return('foo')
   end
 end
