@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/adhearsion/adhearsion-asr"
   s.summary     = %q{Adds speech recognition support to Adhearsion as a plugin}
   s.description = %q{Adds speech recognition support to Adhearsion as a plugin}
-  
+
   s.license = 'MIT'
 
   s.rubyforge_project = "adhearsion-asr"
@@ -19,9 +19,8 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency %q<adhearsion>, ["~> 2.4"]
-  s.add_runtime_dependency %q<punchblock>, ["~> 2.0"]
-  s.add_runtime_dependency %q<ruby_speech>, ["~> 2.1"]
+  s.add_runtime_dependency %q<adhearsion>, ["3.0.0.rc1"]
+  s.add_runtime_dependency %q<ruby_speech>, ["~> 3.0"]
 
   s.add_development_dependency %q<bundler>, ["~> 1.0"]
   s.add_development_dependency %q<rspec>, ["~> 3.0"]
